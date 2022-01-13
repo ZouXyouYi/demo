@@ -3,16 +3,16 @@ import {
   ArrowLeftOutlined
 } from '@ant-design/icons';
 
-export default function topButton(props:any) {
-  const {data } =props
+interface Props{
+  data:string
+}
+
+export default function topButton(props:Props) {
 
   return (
-      <div className="">
-          <ArrowLeftOutlined />
-          <h6 style={{color:"black"}}>{data}</h6>
-          {
-            console.log(props)
-          }
+      <div style={{display:'inline-block'}}>
+          <ArrowLeftOutlined/>
+          <h6 style={{color:"black"}}>{props.data}</h6>
       </div>
   );
 

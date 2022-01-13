@@ -1,10 +1,8 @@
 import './App.css';
 import Home from './components/Home';
 import Next from './components/Next';
-import TopButton from './components/topButton';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 
-const datas = "djkhfgsd"
 function App() {
   return (
     <div className="App">
@@ -17,13 +15,10 @@ function App() {
           </ul>
         </div>
         <div className='right'>
-          <div>
-            <TopButton date={datas}></TopButton>
-          </div>
 
           <Routes>
             <Route path='/Home' element={<Home />} />
-            <Route path='/next' element={<Next/>}/>
+            {/* <Route path='/next' element={<Next/>}/> */}
           </Routes>
         </div>
       </HashRouter>
