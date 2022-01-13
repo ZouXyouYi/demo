@@ -1,0 +1,73 @@
+.content {
+  padding: 0;
+  display: inline-block;
+}
+.content .info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.content .info .stepNum {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+}
+.content .info .stepName {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.content .info .line {
+  width: 60px;
+  height: 3px;
+  background-color: gray;
+  margin-left: 0;
+}
+.content .set_height {
+  height: 120px;
+  align-self: baseline;
+}
+.content .node {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 40px;
+  height: 120px;
+  position: relative;
+  bottom: 20px;
+}
+.content .node .lineNode1 {
+  width: 40px;
+  height: 60px;
+  border-left: 3px solid gray;
+  border-top: 3px solid gray;
+}
+.content .node .lineNode2 {
+  width: 40px;
+  height: 60px;
+  border-left: 3px solid gray;
+  border-bottom: 3px solid gray;
+}
+.content .node .error {
+  border-color: #d9001b;
+}
+.content .node .active {
+  border-color: #4aa8ff;
+}
+.isActive {
+  color: #4aa8ff;
+}
+.isActive .info .stepNum {
+  background-color: #4aa8ff;
+}
+.isActive .info .line {
+  margin-right: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #4aa8ff;
+}

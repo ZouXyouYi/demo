@@ -1,0 +1,21 @@
+.container {
+  background: #ffffff;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  /* width: 400px; */
+}
+
+  .container_nodes {
+    display: inline-block;
+  }
+
+    .container_node {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
+      position: relative;
+      top: 20px;
+    }
+
