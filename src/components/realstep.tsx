@@ -4,8 +4,6 @@ import './realstep.css'
 export enum LineMode {
     Left,
     Right,
-    NoLine,
-    JustLine,
 }
 
 export default function realStep(props: any) {
